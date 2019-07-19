@@ -11,6 +11,8 @@ import java.util.Set;
 public class HomeController {
     @Autowired
     ActorRepository actorRepository;
+     @Autowired
+     MovieRepository movieRepository;
 
     @RequestMapping("/")
     public String index(Model model){
